@@ -1,6 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&display=swap");
+.card {
+  padding: 1rem;
+  border: 1px solid rgb(190, 35, 18);
+}
+
+*,
+*::before,
+*::after {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-family: Arial, "noto", sans-serif;
+}
+
 .main-nav {
-  background-color: salmon;
-  color: white;
+  background-color: rgb(190, 35, 18);
+  color: #fff;
   height: 60px;
   display: flex;
   align-items: center;
