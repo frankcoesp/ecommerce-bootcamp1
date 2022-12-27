@@ -1,4 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&display=swap");
+.card {
+  margin: 1rem;
+  border: 1px solid red;
+}
+.card__header {
+  height: 120px;
+  background-color: orange;
+}
+.card__img {
+  height: 120px;
+}
+.card__body {
+  padding: 1rem;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px solid orangered;
+}
+.card__description {
+  padding: 2rem 0;
+}
+.card__price {
+  font-weight: 500;
+  font-size: rgb(35, 35, 35);
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.card__date {
+  color: #777;
+}
+.card__btn {
+  padding: 1rem 1.5rem;
+  background-color: royalblue;
+  color: white;
+}
+
 *,
 *::before,
 *::after {
@@ -12,6 +52,15 @@ a {
   display: inline-block;
 }
 
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
 body {
   font-family: Arial, "noto", sans-serif;
 }
@@ -172,6 +221,30 @@ body {
 }
 .main {
   margin-top: 50px;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   background-color: aliceblue;
+}
+
+.section-cards__header {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section-cards__subtitle {
+  color: #444;
+  font-size: 1rem;
+}
+.section-cards__products-search-container {
+  padding: 1rem;
+  background-color: cornflowerblue;
+}
+.section-cards .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+@media screen and (min-width: 1000px) {
+  .section-cards__header {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
