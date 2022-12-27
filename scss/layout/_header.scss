@@ -16,7 +16,7 @@
 
     &__menu-label{
         color: $color-text-light;
-        margin-left: auto;
+        // margin-left: auto;
         height: 42px;
         // background-color: black;
         width: 42px;
@@ -102,6 +102,18 @@
     }
 }
 
+.user-navbar{
+    margin-left: auto;
+    color: white;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: 0 1rem;
+    &__user-avatar{
+            width: 40px;
+    }
+}
+
 @media screen and (min-width:600px) {
     .navbar{
         &__menu-label, &__menu-btn {
@@ -114,4 +126,7 @@
             width: auto;
         }
     } 
+    .user-navbar{
+        order: 3;
+    }
 }
