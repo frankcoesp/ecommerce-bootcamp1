@@ -1,9 +1,12 @@
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: $color-dark-gray;
     &__column{
         padding: 1rem 1.5rem;
+        text-align: center;
     }
     &__contact-item{
         list-style: none;
@@ -16,11 +19,13 @@
         display: flex;
         align-items: center;
         gap: .5rem;
-
-
-
     }
-
+    &__company-name {
+        color: white;
+    }
+    &__copyright{
+        color: white;
+    }
     &__contact-icon {
         font-size: 1.75rem;
         &--facebook{

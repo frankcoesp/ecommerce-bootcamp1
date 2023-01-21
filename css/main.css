@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&display=swap");
 .card {
   margin: 1rem;
-  border: 1px solid red;
+  border: 1px solid blue;
 }
 .card__header {
   height: 120px;
-  background-color: orange;
+  background-color: lightblue;
 }
 .card__img {
   height: 120px;
@@ -74,17 +74,23 @@ body {
 
 .navbar {
   height: 50px;
-  background-color: #5499C7;
+  background-color: white;
   display: flex;
   align-items: center;
   position: relative;
 }
 .navbar__logo {
   height: 45px;
+  padding-left: 15px;
+}
+.navbar__name {
+  display: inline-block;
+  width: 200px;
 }
 .navbar__menu-label {
   color: #fff;
   height: 42px;
+  background-color: #3cb3fb;
   width: 42px;
   margin-right: 4px;
   display: flex;
@@ -136,7 +142,7 @@ body {
   list-style: none;
   position: absolute;
   top: 34px;
-  background-color: #cccccc;
+  background-color: white;
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -151,15 +157,15 @@ body {
   border-bottom: 1px solid transparent;
 }
 .navbar__nav-item:not(:last-child) {
-  border-bottom: 1px solid lightgreen;
+  border-bottom: 1px solid #3cb3fb;
 }
 .navbar__nav-link {
-  color: #fff;
+  color: #5499C7;
 }
 
 .user-navbar {
   margin-left: auto;
-  color: white;
+  color: #3cb3fb;
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -186,10 +192,13 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #222;
 }
 .footer__column {
   padding: 1rem 1.5rem;
+  text-align: center;
 }
 .footer__contact-item {
   list-style: none;
@@ -200,6 +209,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+.footer__company-name {
+  color: white;
+}
+.footer__copyright {
+  color: white;
 }
 .footer__contact-icon {
   font-size: 1.75rem;
@@ -222,7 +237,7 @@ body {
 .main {
   margin-top: 50px;
   padding: 1.5rem 0;
-  background-color: aliceblue;
+  background-color: whitesmoke;
 }
 
 .section-cards__header {
