@@ -22,7 +22,7 @@
         color:$color-text-light;
         // margin-left: auto;
         height: 42px;
-        background-color: #3cb3fb;
+        background-color:$color-bg-secondary;
         width: 42px;
         margin-right: 4px;
         display: flex;
@@ -98,17 +98,17 @@
         // background-color: blue;
 
         &:not(:last-child){
-            border-bottom: 1px solid #3cb3fb;
+            border-bottom: 1px solid $color-bg-secondary;
         }
     }
     &__nav-link{
-        color: $color-bg-secondary;
+        color: #2E86C1;
     }
 }
 
 .user-navbar{
     margin-left: auto;
-    color:#3cb3fb;
+    color:$color-bg-secondary;
     display: flex;
     gap: .5rem;
     align-items: center;

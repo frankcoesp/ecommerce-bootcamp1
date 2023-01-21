@@ -1,0 +1,32 @@
+.section-cards{
+    &__general-cards__general-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        // investigar por que no se alinean 
+    }
+    &__icon-category{
+        // corregir el icono 
+    }
+    &__category-title{
+        color:black;
+        display: inline-block;
+    }
+    &__general-list{
+        display: inline-block;
+        padding: 10px;
+    }
+    &__general-link{
+        color: $color-bg-secondary;
+        align-items: center;
+    }
+    &__general-img{
+        width: 70px;
+        border: 2.5px solid $color-bg-secondary;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    
+}
