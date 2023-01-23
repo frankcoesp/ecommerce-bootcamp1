@@ -1,6 +1,7 @@
+
 .card{
     margin: 1rem;
-    border: 1px solid blue;
+    border: 1px solid $color-bg-secondary;
     &__header{
         height: 120px;
         background-color: lightblue;
@@ -31,13 +32,9 @@
     &__date{
         color: #777;
     }
-    &__btn-container{
-        
-    }
     &__btn{
         padding: 1rem 1.5rem;
         background-color: royalblue;
         color: white;
-
     }
 } 

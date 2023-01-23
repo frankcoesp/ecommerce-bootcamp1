@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&display=swap");
 .card {
   margin: 1rem;
-  border: 1px solid blue;
+  border: 1px solid #3cb3fb;
 }
 .card__header {
   height: 120px;
@@ -80,12 +80,23 @@
     transform: translateX(-1400px);
   }
 }
+.section-cards__category-general {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3cb3fb;
+  background-color: black;
+}
 .section-cards__general-cards__general-cards-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.section-cards__icon-category {
+  background-color: transparent;
+  color: #3cb3fb;
+  padding-left: 10px;
 }
 .section-cards__category-title {
   color: black;
@@ -103,7 +114,11 @@
   width: 70px;
   border: 2.5px solid #3cb3fb;
   border-radius: 50%;
+  box-shadow: 0px 3px 1px 0px rgba(204, 204, 204, 0.8);
   padding: 5px;
+}
+.section-cards__producto-name {
+  font-size: 16px;
 }
 
 *,
@@ -328,5 +343,126 @@ body {
 @media screen and (min-width: 1000px) {
   .section-cards__header {
     display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header-form {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.header-form__logo {
+  height: 50px;
+  padding-left: 15px;
+}
+
+.main-form {
+  font-family: "reboto", sans-serif;
+  background: rgb(60, 179, 251);
+  background: linear-gradient(90deg, rgb(60, 179, 251) 45%, rgb(27, 57, 151) 97%);
+}
+
+.section-form__title {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0px 17px;
+}
+.section-form__login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-form__login {
+  margin: 20px 10px 65px;
+  padding: 15px 5px;
+  background-color: #232322;
+  width: 315px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 0px 0px 10px 7px black;
+}
+.section-form__login-div {
+  color: white;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.section-form__login-input {
+  display: block;
+  width: 270px;
+  height: 25px;
+  padding-left: 10px;
+}
+.section-form__login-sex {
+  padding: 10px 5px;
+}
+.section-form__login-btn {
+  width: 70px;
+  height: 30px;
+  border: none;
+  background-color: #3cb3fb;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section-form__login-btn:hover {
+  box-shadow: 0px 0px 3px 1px rgba(204, 204, 204, 0.8);
+}
+
+.form-style__placeholder::-moz-placeholder {
+  color: #3cb3fb;
+}
+
+.form-style__placeholder:-ms-input-placeholder {
+  color: #3cb3fb;
+}
+
+.form-style__placeholder::placeholder {
+  color: #3cb3fb;
+}
+.form-style__input {
+  color: lightgreen;
+}
+.form-style__placeholder-mail::-moz-placeholder {
+  color: lightgreen;
+}
+.form-style__placeholder-mail:-ms-input-placeholder {
+  color: lightgreen;
+}
+.form-style__placeholder-mail::placeholder {
+  color: lightgreen;
+}
+
+.footer-form {
+  background-color: #222;
+  width: 100%;
+  height: auto;
+}
+.footer-form__title {
+  color: white;
+  text-align: center;
+  font-size: small;
+  font-size: 12px;
+  padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-form {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

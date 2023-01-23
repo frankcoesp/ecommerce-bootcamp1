@@ -1,4 +1,10 @@
 .section-cards{
+    &__category-general{
+        font-size: 24px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: $color-bg-secondary;
+        background-color: black;
+    }
     &__general-cards__general-cards-container{
         display: flex;
         flex-direction: row;
@@ -8,7 +14,10 @@
         // investigar por que no se alinean 
     }
     &__icon-category{
-        // corregir el icono 
+        background-color:transparent;
+        color:$color-bg-secondary;
+        padding-left: 10px;
+        
     }
     &__category-title{
         color:black;
@@ -26,7 +35,11 @@
         width: 70px;
         border: 2.5px solid $color-bg-secondary;
         border-radius: 50%;
+        box-shadow: 0px 3px 1px 0px #cccc;
         padding: 5px;
+    }
+    &__producto-name{
+        font-size: 16px;
     }
     
 }
