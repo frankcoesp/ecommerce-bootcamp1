@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Sans:wght@500&family=Oswald:wght@300&family=Roboto+Condensed:wght@700&display=swap");
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 .card {
   margin: 1rem;
   border: 1px solid #3cb3fb;
@@ -473,7 +478,7 @@ body {
 }
 
 .main-contact {
-  margin-top: 53px;
+  margin-top: 54px;
   background-color: #3cb3fb;
   color: white;
 }/*# sourceMappingURL=main.css.map */

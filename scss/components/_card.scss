@@ -1,4 +1,7 @@
-
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+}
 .card{
     margin: 1rem;
     border: 1px solid $color-bg-secondary;
