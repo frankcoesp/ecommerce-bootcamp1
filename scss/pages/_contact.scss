@@ -1,0 +1,17 @@
+
+.header-contact{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    &__logo{
+        height: 50px;
+        padding-left: 15px;
+    }
+}
+.main-contact{
+    margin-top: 53px;
+    background-color: $color-bg-secondary;
+    color: white;
+}

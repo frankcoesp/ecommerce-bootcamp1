@@ -84,7 +84,7 @@
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   color: #3cb3fb;
-  background-color: black;
+  background-color: transparent;
 }
 .section-cards__general-cards__general-cards-container {
   display: flex;
@@ -345,12 +345,6 @@ body {
     display: flex;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -465,4 +459,21 @@ body {
   .section-form {
     width: 100%;
   }
+}
+.header-contact {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.header-contact__logo {
+  height: 50px;
+  padding-left: 15px;
+}
+
+.main-contact {
+  margin-top: 53px;
+  background-color: #3cb3fb;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
