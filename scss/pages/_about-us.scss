@@ -1,0 +1,11 @@
+.main-aboutus{
+    background-color: $color-bg-secondary;
+    color: #fff;
+    margin-top: 50px;
+}
+.section-aboutus{
+    &__title{
+        text-align: center;
+        padding-top: 10px;
+    }
+}

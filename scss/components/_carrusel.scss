@@ -1,6 +1,6 @@
 .section-cards{
     &__carrusel-container{
-        width: 75vw;
+        width: 100%;
         height: auto;
         margin: auto;
         overflow: hidden;   
@@ -33,5 +33,13 @@
     100%{
         -webkit-transform: translateX(calc(-200px * 7));
         transform:translateX(calc(-200px * 7));
+    }
+}
+
+@media screen and (min-width:600px){
+    .section-cards{
+        &__carrusel-container{
+            width: 75vw;
+        }
     }
 }

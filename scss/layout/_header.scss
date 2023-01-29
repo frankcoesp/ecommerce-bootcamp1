@@ -3,6 +3,7 @@
     width: 100%;
     top: 0px;
     left: 0px;
+    border-bottom: 0.2px solid $color-bg-secondary;
 }
 .navbar{
     height: 50px;
@@ -13,6 +14,7 @@
     &__logo{
         height: 45px;
         padding-left: 15px;
+        padding-top: 10px;
     }
     &__name{
         display:inline-block;
