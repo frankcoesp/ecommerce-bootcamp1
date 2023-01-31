@@ -4,24 +4,34 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.section-cards__category {
+  color: #3cb3fb;
+  padding-left: 15px;
+}
+
 .card {
-  margin: 1rem;
-  border: 1px solid #3cb3fb;
+  margin: 2rem;
+  border: 2px solid #3cb3fb;
 }
 .card__header {
-  height: 120px;
-  background-color: lightblue;
+  height: 190px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__img {
-  height: 120px;
+  height: 145px;
 }
 .card__body {
   padding: 1rem;
+  background-color: #3cb3fb;
+  color: white;
 }
 .card__title {
   font-weight: 500;
   font-size: 1.5rem;
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid #fff;
 }
 .card__description {
   padding: 2rem 0;
@@ -34,14 +44,16 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  background-color: #3cb3fb;
 }
 .card__date {
-  color: #777;
+  color: black;
 }
 .card__btn {
   padding: 1rem 1.5rem;
-  background-color: royalblue;
-  color: white;
+  background-color: #fff;
+  color: #3cb3fb;
+  box-shadow: 1px 5px 4px black;
 }
 
 .section-cards__carrusel-container {
@@ -218,7 +230,6 @@ body {
   width: 100%;
   top: 0px;
   left: 0px;
-  border-bottom: 0.2px solid #3cb3fb;
 }
 
 .navbar {
@@ -605,7 +616,50 @@ body {
   margin-top: 50px;
 }
 
+.section-aboutus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section-aboutus__paragraph-conteiner {
+  width: 500px;
+}
 .section-aboutus__title {
+  border-bottom: 1px solid #fff;
+}
+.section-aboutus__paragraph {
+  margin: 5px;
   text-align: center;
-  padding-top: 10px;
+}
+.section-aboutus__logo {
+  width: 150px;
+}
+.section-aboutus__interactive-conteiner {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-aboutus__textarea {
+  width: 400px;
+}
+.section-aboutus__btn-conteiner {
+  margin: 5px 0;
+}
+.section-aboutus__btn {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #fff;
+  background-color: #3cb3fb;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .section-aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
