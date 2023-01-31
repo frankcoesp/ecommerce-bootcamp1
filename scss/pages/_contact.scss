@@ -26,11 +26,9 @@
         align-items: flex-start;
     }
     &__contact-container{
-        // border: 3px solid yellow;
         margin-right: 200px;
     }
     &__comunication{
-        // border: 2px solid green;
         width: 300px;
         border-bottom: 1px solid #fff;
     }
@@ -73,9 +71,7 @@
         }
     }
     &__comunication-form{
-        // border: 3px solid red;
-        width: 600px;
-        
+        width: 600px;  
     }
     &__form-conteiner-margin{
         border: 3px solid #fff;
@@ -104,18 +100,43 @@
 
 @media screen and (max-width:600px) {
     .section-contact{
+        &__contact-container{
+            margin-right:0px;
+        }
         &__main-container{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items:flex-end;
+            justify-content: center;
+            align-items:center;
         }
         &__contact-comunication{
-            padding-left: 100px;
+            width: 300px;
         }
         &__img{
-            width: 500px;
-            padding-left: 50px;
+            width: 300px;
+            position: relative;
+            top: 0;
+            left: 140px;
+        }
+        &__form-conteiner-margin{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__contact-conteiner{
+            padding-left: 140px;
+        }
+        &__form-conteiner{
+            width: 300px;
+        }
+        &__input-form{
+            width: 300px;
+            height: 30px;
+            text-align: center;
+        }
+        &__textarea{
+            width: 300px;
         }
     }
 }

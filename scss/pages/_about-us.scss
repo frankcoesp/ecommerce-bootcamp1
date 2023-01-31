@@ -7,16 +7,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family:'Times New Roman', Times, serif;
     
     &__paragraph-conteiner{
-        // border: 3px solid red;
         width: 500px;
     }
     &__title{
         border-bottom: 1px solid #fff;
     }
     &__paragraph{
-        // border: 3px solid green;
         margin: 5px;
         text-align: center;
     }
@@ -24,7 +23,6 @@
         width: 150px
     }
     &__interactive-conteiner{
-        // border: 3px solid red;
         width: 500px;
         display: flex;
         flex-direction: column;
@@ -33,6 +31,7 @@
     }
     &__textarea{
         width: 400px;
+        height: 200px;
     }
     &__btn-conteiner{
         margin: 5px 0;
@@ -45,12 +44,30 @@
         color: #fff;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px){
     .section-aboutus{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &__paragraph-conteiner{
+            width: 300px;
+            font-size: 18px;
+        }
+        &__paragraph{
+            width: 300px;
+            margin: 0;
+        }
+        &__textarea-conteiner{
+            width: 300px;
+            margin: 0;
+        }
+        &__textarea{
+            width: 300px;
+        }
+        &__btn{
+            margin: 10px 0;
+        }
     }
 }
 
