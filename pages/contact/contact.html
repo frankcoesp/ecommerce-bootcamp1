@@ -85,27 +85,40 @@
             <!-- contenerdor 2  -->
             <div class="section-contact__comunication-form">
                 <div class="section-contact__form">
-                    <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg" alt="" width="599px">
+                    <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg" class="section-contact__img"  alt="" width="599px">
                 </div>
-                <div class="section-contact__form">
-                    <form>
-                        <div>
-                            <label for="mail">Email</label>
-                            <input type="email" id="mail" name="email">
+                <div class="section-contact__form-conteiner-margin">
+                    <form class="section-contact__form" >
+                        <div class="section-contact__form-conteiner">
+                            <div class="section-contact__form">
+                                <label for="name"></label>
+                                <input type="text" name="name" id="name" placeholder="Nombre completo" class="section-contact__input-form">
+                            </div>
+                            <div class="section-contact__form">
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email" class="section-contact__input-form">
+                            </div>
+                            <div class="section-contact__form">
+                                <label for="direction"></label>
+                                <input type="text" name="telefono" id="telefono" placeholder="telefono" class="section-contact__input-form">
+                            </div>
+                            <div class="section-contact__form">
+                                <label for="ciudad"></label>
+                                <input type="text" name="ciudad" id="ciudad" placeholder="ciudad" class="section-contact__input-form">
+                            </div>
+                            <div class="section-contact__form">
+                                <label for="provincia"></label>
+                                <input type="text" name="provincia" id="provincia" placeholder="Provincia" class="section-contact__input-form">
+                            </div>
+                            <div class="section-contact__form">
+                                <label for=""></label>
+                                <textarea name="" id="" cols="30" rows="10" class="section-contact__textarea" placeholder="Dejanos tu consulta y la estaremos contestando a tu email o numero de wpp"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div>
-                            <label for="direction">Direccion</label>
-                            <input type="text" id="direction" name="direction">
-                        </div>
-                        <div>
-                            <label for="msj">Mensaje</label>
-                            <textarea name="msj" id="msj" cols="30" rows="10" placeholder="dejanos tu consulta"></textarea>
-                        </div>
-                        <button>enviar</button>
+                        <div class="section-aboutus__btn-conteiner">
+                            <label for="btn"></label>
+                            <input type="submit" name="btn" id="btn" class="section-aboutus__btn">
+                        </div> 
                     </form>
                 </div>
             </div> 

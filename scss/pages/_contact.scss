@@ -77,8 +77,45 @@
         width: 600px;
         
     }
-    &__form{
-        // border: 3px solid green;
+    &__form-conteiner-margin{
+        border: 3px solid #fff;
         width: 599px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form-conteiner{
+        width: 450px;
+    }
+    &__form{
+        margin: 5px;
+    }
+    &__input-form{
+        width: 400px;
+        height: 30px;
+        text-align: center;
+    }
+    &__textarea{
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-contact{
+        &__main-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:flex-end;
+        }
+        &__contact-comunication{
+            padding-left: 100px;
+        }
+        &__img{
+            width: 500px;
+            padding-left: 50px;
+        }
     }
 }
