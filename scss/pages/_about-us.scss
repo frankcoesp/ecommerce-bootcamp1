@@ -1,0 +1,57 @@
+.main-aboutus{
+    background-color: $color-bg-secondary;
+    color: #fff;
+    margin-top: 50px;
+}
+.section-aboutus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    &__paragraph-conteiner{
+        // border: 3px solid red;
+        width: 500px;
+    }
+    &__title{
+        border-bottom: 1px solid #fff;
+    }
+    &__paragraph{
+        // border: 3px solid green;
+        margin: 5px;
+        text-align: center;
+    }
+    &__logo{
+        width: 150px
+    }
+    &__interactive-conteiner{
+        // border: 3px solid red;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__textarea{
+        width: 400px;
+    }
+    &__btn-conteiner{
+        margin: 5px 0;
+    }
+    &__btn{
+        width:100px;
+        height: 50px;
+        border:2px solid #fff;
+        background-color:$color-bg-secondary;
+        color: #fff;
+    }
+}
+@media screen and (max-width:600px) {
+    .section-aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// falta poner unas estrellas abajo del textarea para que puedan calificarnos

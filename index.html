@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamp-ecommerce1</title>
+    <title>Compucinco.com</title>
+    <link rel="icon" type="image" href="/assets/images/main/descarga-removebg-preview.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -12,8 +13,19 @@
     <header class="header">
         <nav class="navbar">
             <a href="/index.html" class="navbar__nav-link">
-                <img class="navbar__logo" src="/assets/images/descarga-removebg-preview.png" alt="Logo de compucinco">
+                <img class="navbar__logo" src="/assets/images/main/descarga-removebg-preview.png" alt="Logo de patagonia conexion">
+                <img class="navbar__name" src="/assets/images/main/compucinco-minimalista.png" alt="patagonia conexion">
             </a>
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <!-- TODO: Add font icon and icon item -->
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="user-navbar__user-avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="imagen de usuario">
+                </div>
+                    <!-- TODO: Avatar de la persona logeada o Nombre -->
+            </div>
             
             <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
 
@@ -26,182 +38,663 @@
                     <a href="/index.html" class="navbar__nav-link">Inicio</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link" target="_blank">Contacto</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link" target="_blank">Nosotros</a>
                 </li>
                 <li class="navbar__nav-item">
-                    <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                    <a href="/pages/register/register.html" class="navbar__nav-link" target="_blank">Registrarse</a>
                 </li>
             </ul>
         </nav>
-        <!-- <div class="user-navbar">
-            <div class="user-navbar__cart-icon-container">
-                TODO: Add font icon and icon item 
-            </div>
-                TODO: Avatar de la persona logeada o Nombre
-        </div> -->
+
     </header>
     <!-- TODO: implementar carousel en 2do modulo -->
-    <main>
-        <section class="section-cards">
-            <header class="section-cards__header">
-                <div class="section-cards__title-container">
-                    <h1 class="section-cards__title">
-                        Lorem ipsum dolor sit amet.
-                    </h1>
-                    <p class="section-cards__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nulla assumenda similique molestias minima. Quis.
-                    </p>
+    <main class="main">
+        <div class="section-cards__carrusel-container">
+            <div class="section-cards__carrusel">
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/gtc_para_quitar_fondo-removebg-preview.png" alt="logo gtc">
                 </div>
-                <div class="section-card__products-search-container">
-
-
-                    <div class="product-search">
-                        <label for="" class="product-search__label">
-                            Buscar
-                        </label>
-                        <input type="text" class="product-search__input">
-                        <button class="product-search__btn">Buscar</button>
-                    </div>
-                    
-                    <div class="section-cards__products-count">
-                        se encontraron X productos
-                    </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/soulren.png" alt="soul">
                 </div>
-            </header>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/epson-removebg-preview.png" alt="epson">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/kisspng-hewlett-packard-dell-laptop-computer-monitors-prin-hp-logo-5b205910e7fc03.5621755015288466089502-removebg-preview.png" alt="hp">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/iPhone-Logo-2007-removebg-preview.png" alt="iphone">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/lenovonuevo-removebg-preview.png" alt="lenovo">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/Logo-Motorola-removebg-preview.png" alt="motorola">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/sms-removebg-preview.png" alt="sms">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/Stcl_renvado-removebg-preview.png" alt="tcl">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/vallenet_lgoo-removebg-preview.png" alt="vallenet">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/xiaomi_para_quitar_el_fondo-removebg-preview.png" alt="xiaomi">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/tp_link-removebg-preview.png" alt="tp-link">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/roku2-removebg-preview.png" alt="Roku">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/directv-removebg-preview.png" alt="Directv">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/movistar-removebg-preview.png" alt="Movistar">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/claro-removebg-preview.png" alt="claro">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/personal.png" alt="personal">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/stromberg-removebg-preview.png">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/main/descarga-removebg-preview.png" alt="Compucinco">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/gtc_para_quitar_fondo-removebg-preview.png" alt="logo gtc">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/soulren.png" alt="soul">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/epson-removebg-preview.png" alt="epson">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/kisspng-hewlett-packard-dell-laptop-computer-monitors-prin-hp-logo-5b205910e7fc03.5621755015288466089502-removebg-preview.png" alt="hp">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/iPhone-Logo-2007-removebg-preview.png" alt="iphone">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/lenovonuevo-removebg-preview.png" alt="lenovo">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/Logo-Motorola-removebg-preview.png" alt="motorola">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/sms-removebg-preview.png" alt="sms">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/Stcl_renvado-removebg-preview.png" alt="tcl">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/vallenet_lgoo-removebg-preview.png" alt="vallenet">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/xiaomi_para_quitar_el_fondo-removebg-preview.png" alt="xiaomi">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/tp_link-removebg-preview.png" alt="tp-link">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/roku2-removebg-preview.png" alt="Roku">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/directv-removebg-preview.png" alt="Directv">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/movistar-removebg-preview.png" alt="Movistar">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/claro-removebg-preview.png" alt="claro">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/personal.png" alt="personal">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/carrusel/stromberg-removebg-preview.png" alt="stromberg">
+                </div>
+                <div class="section-cards__carrusel-img-container">
+                    <img class="section-cards__carrusel-img" src="/assets/images/main/descarga-removebg-preview.png" alt="Compucinco">
+                </div>
+            </div> 
+        </div>
 
-            <div class="cards-container">
-                <h1 class="cards-container__category">
-                    CATEGORIA: OFERTAS
-                </h1>
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME 
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
-                        </p>
-                        <div class="card__price">
-                            $XXXX
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            23/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME 
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
-                        </p>
-                        <div class="card__price">
-                            $XXXX
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            23/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME 
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
-                        </p>
-                        <div class="card__price">
-                            $XXXX
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            23/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME 
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
-                        </p>
-                        <div class="card__price">
-                            $XXXX
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            23/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article>
+        <div class="section-cards__category-generalMain-container">
+            <div class="section-cards__category-general-main">
+                <i class="fa-solid fa-store section-cards__icon-category"></i>
+                <strong>Compucinco Stock</strong>
             </div>
+            <form class="section-cards__search-form">
+                <div class="section-cards__search">
+                    <label for="search"></label>
+                    <input type="search" name="buscador" id="search" class="section-cards__search-input" placeholder="Todos los productos en un solo lugar.">
+                </div>
+            </form>
+        </div>
+
+        <div class="section-cards__category-general-container">
+            <div class="section-cards__category-general">
+                <a class="section-cards__product-name" href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/celulares.png" alt="celulares">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Celulares
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/notebooks-removebg-preview.png" alt="Notebooks">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Notebooks
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/impresora-removebg-preview.png" alt="Impresoras">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Impresoras
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/SmartWatch_Circle_ONE_Negro_1-removebg-preview.png" alt="Smartwatch">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Smartwatch
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/tablet-removebg-preview.png" alt="Tablet">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Tablet
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/parlante_jbl-removebg-preview.png" alt="Parlante">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Parlante
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/smart-tv-full-hd-samsung-43-un43t5300a-removebg-preview.png" alt="tv smart">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Tv Smart
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/pc-removebg-preview.png" alt="PC">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                PC
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/microondas-removebg-preview.png" alt="Electrodomesticos">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Electrodomesticos
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/estabilizador-removebg-preview.png" alt="Energia">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Energia 
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/category-general/TP-Link_Router_WIFI_450Mbps_TL-WR940N_1-removebg-preview.png" alt="Wifi">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                Wifi 
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="section-cards__general-cards">
+                        <img class="section-cards__general-img" src="/assets/images/register/compu5-removebg-preview.png" alt="">
+                        <p class="section-cards__product-name">
+                            <strong>
+                                + Productos
+                            </strong>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+            <h1 class="section-cards__category">
+                PRODUCTO MAS VENDIDO POR RUBRO
+            </h1>
+            <div class="cards-container">
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a336mzofaro/gallery/ar-galaxy-a33-5g-a336-sm-a336mzofaro-532010050?$650_519_PNG$" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Samsung Galaxy A33 128gb
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fpdp-carousel-items%2F89dedcd5-af2b-4061-82ad-ae07854bfdf4.png" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Convertidor Smart Roku premiere 
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_937381-MLA49591569658_042022-O.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Smartwatch Xiaomi K10
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_977031-MLA40757319694_022020-O.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Auricular Inalambrico Xiaomi 
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8OTQyNTV8aW1hZ2UvcG5nfGgwNy9oNjYvMTE0Njg4MDkwNDM5OTgucG5nfDY2NTgyMzM5NGUwNGJkODk5N2Y0MmMyZDIzNmIyNDQzZmIyYTlmYmFhNDAxNTVjNWNmMGI5NTQyZDQ1NzFjZDI" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Notebook Lenovo
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_787213-MLA50594075935_072022-O.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Impresora canon 
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://images.fravega.com/f1000/eabfc303efc315915fa6d9ed27c777f0.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Tablet Lenovo
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://www.megatecnologia.com.ar/images/1672084136917.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Pc Gamer
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://www.centerhogar.com.ar/2613-large_default/parlante-stromberg-sc-10-slim-portatil.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Parlante Stromberg
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://mla-s1-p.mlstatic.com/858582-MLA31127730349_062019-F.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Placa red 300mbps
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_702619-MLA47327094987_092021-O.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Estabilizador atomlux
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_813373-MLA26000888353_092017-O.jpg" alt="Product image" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title">
+                            <strong>
+                                Colchon Canon
+                            </strong>
+                        </div>
+                        <p class="card__description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolore quae culpa recusandae dolor necessitatibus?
+                        </p>
+                        <div class="card__price">
+                            $XXXX
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__date">
+                            23/12/2022
+                        </div>
+                        <div class="card__btn-container">
+                            <a class="card__btn" href="#">
+                                <strong>
+                                    Detalle
+                                </strong>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
 
         </section>
     </main>
-    <div class="whatsapp-container">
-        <a href="" class="whatsapp-container__link">
-            <img src="#" alt="whatsapp contact link" class="whatsapp-container__img">
+
+        <a class="contact__btn-wpp" href="https://wa.me/5492995074771?text=Hola%20me%20interesa%20el%20producto" target="_blank">
+            <i class="fa-brands fa-whatsapp contact__icon-wpp"></i>
         </a>
-    </div>
+
     <footer class="footer">
         <div class="footer__column">
             <ul class="footer__contact-container">
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="/pages/contact/contact.html" class="footer__contact-link">
                         <i class="fa-brands fa-facebook
                         footer__contact-icon
-                        footer__contact-icon--facebook"></i>
+                        footer__contact-icon--facebook1"></i>
                         Facebook
                     </a>
                 </li>
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="/pages/contact/contact.html" class="footer__contact-link">
                         <i class="fa-brands fa-instagram
                         footer__contact-icon
                         footer__contact-icon--instagram"></i>
@@ -209,7 +702,7 @@
                     </a>
                 </li>
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="/pages/contact/contact.html" class="footer__contact-link">
                         <i class="fa-brands fa-linkedin 
                         footer__contact-icon
                         footer__contact-icon--linkedin"></i>
@@ -219,9 +712,9 @@
             </ul>
         </div>
         <div class="footer__column">
-            <img src="/assets/images/descarga-removebg-preview.png" alt="company logo" class="footer__logo" width="50px">
+            <img class="footer__company-logo" src="/assets/images/main/descarga-removebg-preview.png" alt="company logo" class="footer__logo" width="50px">
             <h2 class="footer__company-name">
-                NOMBRE DE LA EMPRESA
+                COMPUCINCO SRL 
             </h2>
             <p class="footer__copyright">
                 Todos los derechos reservados a Compucinco srl
@@ -230,19 +723,19 @@
         <div class="footer__column">
             <ul class="footer__contact-container">
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="/pages/contact/contact.html" class="footer__contact-link">
                         <i class="fa-solid fa-phone"></i>
                         Telefono
                     </a>
                 </li>
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="https://www.google.com/maps/dir/-38.8095178,-68.0596746/compucinco/@-38.8175105,-68.0717597,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x960a4a138d5c9787:0xca2d0d7801363de5!2m2!1d-68.0676249!2d-38.8254946?hl=es-419" class="footer__contact-link" target="_blank">
                         <i class="fa-solid fa-location-dot"></i>
                         Localizacion 
                     </a>
                 </li>
                 <li class="footer__contact-item">
-                    <a href="#" class="footer__contact-link">
+                    <a href="mailto:espifranjor@hotmail.com" class="footer__contact-link" target="_blank">
                         <i class="fa-solid fa-envelope"></i>
                         Email 
                     </a>
@@ -252,3 +745,9 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+<!-- Codigo hecho por Franco Espiñeira -->

@@ -1,0 +1,121 @@
+.header-contact{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    &__logo{
+        height: 50px;
+        padding-left: 15px;
+    }
+}
+.main-contact{
+    background-color: $color-bg-secondary;
+    margin-top: 56px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-contact{
+        // border: 3px solid red;
+        width: 100%;
+    &__main-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    &__contact-container{
+        // border: 3px solid yellow;
+        margin-right: 200px;
+    }
+    &__comunication{
+        // border: 2px solid green;
+        width: 300px;
+        border-bottom: 1px solid #fff;
+    }
+    &__title{
+        text-align:left;
+        margin: 10px;
+    }
+    &__icon-social{
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        margin: 20px;
+        border-radius: 50%;
+        padding:10px;
+        box-shadow:0px 5px 10px rgb(0, 0, 0, .35) ;
+        transition: .3s ease;
+        &--youtube:hover{
+            background-color: red;
+            color: #fff;
+            box-shadow: 0 0 15px red,
+                0 0 45px red,
+                0 0 75px red,
+                0 0 115px red;
+        }        
+        &--instagram:hover{
+            background-color: #f14d59;
+            color: #fff;
+            box-shadow: 0 0 15px #f14d59,
+                0 0 45px #f14d59,
+                0 0 75px #f14d59,
+                0 0 115px #f14d59;
+        }
+        &--facebook:hover{
+            background-color: #1978f0;
+            color: #fff;
+            box-shadow: 0 0 15px #1978f0,
+                0 0 45px #1978f0,
+                0 0 75px #1978f0,
+                0 0 115px #1978f0;
+        }
+    }
+    &__comunication-form{
+        // border: 3px solid red;
+        width: 600px;
+        
+    }
+    &__form-conteiner-margin{
+        border: 3px solid #fff;
+        width: 599px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form-conteiner{
+        width: 450px;
+    }
+    &__form{
+        margin: 5px;
+    }
+    &__input-form{
+        width: 400px;
+        height: 30px;
+        text-align: center;
+    }
+    &__textarea{
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-contact{
+        &__main-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:flex-end;
+        }
+        &__contact-comunication{
+            padding-left: 100px;
+        }
+        &__img{
+            width: 500px;
+            padding-left: 50px;
+        }
+    }
+}

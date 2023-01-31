@@ -1,0 +1,45 @@
+.section-cards{
+    &__carrusel-container{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: hidden;   
+    }
+    &__carrusel{
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+        align-items: center;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width:calc(200px * 14);
+        padding: 15px;
+    }
+    &__carrusel-img-container{
+        width: 200px;
+        padding-left: 20px;
+    }
+    
+    &__carrusel-img{
+        width: 100%;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform:translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform:translateX(calc(-200px * 7));
+    }
+}
+
+@media screen and (min-width:600px){
+    .section-cards{
+        &__carrusel-container{
+            width: 75vw;
+        }
+    }
+}

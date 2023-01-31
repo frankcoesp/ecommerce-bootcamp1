@@ -1,4 +1,54 @@
-// .card{
-//     padding: 1rem;
-//     border: 1px solid $color-bg-primary;
-// }
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+}
+.section-cards__category{
+    color:$color-bg-secondary;
+    padding-left: 15px;
+}
+.card{
+    margin: 2rem;
+    border: 2px solid $color-bg-secondary;
+    &__header{
+        height: 190px;
+        background-color:#fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        height: 145px;
+    }
+    &__body{
+        padding: 1rem;
+        background-color: $color-bg-secondary;
+        color: white;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-bottom: 2px solid #fff;
+    }
+    &__description{
+        padding: 2rem 0;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: $color-bg-primary;
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: $color-bg-secondary;
+    }
+    &__date{
+        color:black;
+    }
+    &__btn{
+        padding: 1rem 1.5rem;
+        background-color: #fff;
+        color: $color-bg-secondary;
+        box-shadow: 1px 5px 4px black;
+    }
+} 

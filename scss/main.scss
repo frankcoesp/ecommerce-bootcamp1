@@ -1,6 +1,9 @@
 @import "abstracts/variables";
 
 @import "components/card";
+@import "components/carrusel";
+@import "components/category-general";
+@import "components/wpp";
 
 
 @import "base/reset";
@@ -8,7 +11,13 @@
 
 @import "layout/header"; 
 @import "layout/footer";
+@import "layout/main";
 
 @import "pages/home";
+@import "pages/register";
+@import "pages/contact";
+@import "pages/about-us";
+
+
 
 
